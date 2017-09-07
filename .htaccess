@@ -1,0 +1,8 @@
+RemoveHandler .html .htm
+AddType application/x-httpd-php .php .html
+ErrorDocument 400 /400.html
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+RedirectMatch 301 /twitch(.*) https://www.twitch.tv/liqueseous$1
+RedirectMatch 301 /nextcloud(.*) https://66.31.217.98/nextcloud$1
